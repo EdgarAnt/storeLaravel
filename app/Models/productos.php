@@ -16,7 +16,7 @@ class productos extends Model
     //this a array with all the parameters
     
     // protected $table='productoss'this is in case when we are change the name of the table
-    protected $table='tareas';
+    protected $table='productos';
     protected $fillable = [
     'nombre',
     'descripcion',
