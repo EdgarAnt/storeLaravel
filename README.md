@@ -9,7 +9,8 @@
 
 ## This is my store with laravel
 
-<iframe src="https://giphy.com/embed/giXLnhxp60zEEIkq8K" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/shopping-skeleton-cart-giXLnhxp60zEEIkq8K">via GIPHY</a></p>
+ <img align="right" height="220em" align="right" src="https://giphy.com/embed/giXLnhxp60zEEIkq8K/>
+
 
 ## License
 
