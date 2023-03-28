@@ -7,9 +7,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+ <img align="right" height="220em" align="right" src="https://giphy.com/embed/giXLnhxp60zEEIkq8K/>
+
+
 ## This is my store with laravel
 
- <img align="right" height="220em" align="right" src="https://giphy.com/embed/giXLnhxp60zEEIkq8K/>
 
 
 ## License
