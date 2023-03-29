@@ -5,7 +5,10 @@
 
 @section('contenido')
     <h3>Register the product</h3>
-    <form action="javascript:void(0)">
+    {{-- with the action we write --}}
+    <form action="{{ route('productos.store') }}" method="POST">
+        {{-- Al the forms of laravel, is necesary write this, 'cause whit this we avoid problems like hacking and more things, if dont write that, no will work the form --}}
+        @csrf
         <div class="row">
             <div class="col-sm-12">
                 <label for="InputNombre" class="form-label">Nombre del Producto</label>
@@ -29,7 +32,32 @@
                     <option value="2">Tienda</option>
                 </select>
                 </div>
-                {{-- Minuto 38:48 --}}
+                <div class="col-sm-4">
+                    <label for="InputFechaLimite" class="form-label">Fecha Caducos</label>
+                    <input type="datetime-local" name="fecha_limite" id="InputFechaLimite" class="form-control">
+                </div>
+                <div class="col-sm-12">
+                    <label for="TextAreaDescripcion" class="form-label">Desccripcio</label>
+                    <textarea name="descripcion" id="TextAreaDescirpcion" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+
+                <div class="col-sm-12 text-end my-2">
+                    <button type="submit" class="btn btn-primary">
+                        Guardar
+                    </button>
+                </div>
         </div>
     </form>
+    <h1>Create Post</h1>
+    {{-- definition: if we have any error, so will show alert jus down--}}
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
 @endsection
