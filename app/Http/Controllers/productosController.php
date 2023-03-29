@@ -20,7 +20,9 @@ class productosController extends Controller
      */
     public function create()
     {
-        //
+        //dd("Holas"); //The principal function for dd is show the information for variables or objects
+        //instead of "/" we are used the "."
+        return view('productos.create');
     }
 
     /**

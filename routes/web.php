@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\productosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//is important keep the "productos.create"
+//Reading the code
+//Basically the route is productos/registrar, the controller is in a class, calles create
+Route::get('productos/registrar',[productosController::class, 'create'])->name('productos.create');
